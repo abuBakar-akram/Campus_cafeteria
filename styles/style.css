@@ -1,191 +1,9 @@
 
-/* =================================
-   DEALS PAGE
-
-.deals-hero {
-    background: var(--light);
-    padding: 85px 0;
-    text-align: center;
-}
-
-.deals-hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(38px, 5vw, 58px);
-    line-height: 1.2;
-    margin: 15px 0 20px;
-}
-
-.deals-hero h1 span {
-    color: var(--primary);
-}
-
-.deals-hero p {
-    max-width: 650px;
-    margin: 0 auto 25px;
-    color: var(--text);
-}
-
-/* Daily Special */
-
-.special-card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 35px;
-    align-items: center;
-    background: var(--light);
-    border-radius: 18px;
-    padding: 35px;
-}
-
-.special-content h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 30px;
-    margin: 18px 0;
-}
-
-.special-content p,
-.deal-card p {
-    color: var(--text);
-    line-height: 1.7;
-}
-
-.special-image img {
-    width: 100%;
-    height: 320px;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-/* Deal Labels */
-
-.deal-tag {
-    display: inline-block;
-    background: #ffe3cf;
-    color: var(--primary-dark);
-    padding: 7px 14px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 800;
-}
-
-/* Deal Prices */
-
-.deal-price {
-    margin: 22px 0;
-    color: var(--primary);
-}
-
-.deal-price strong {
-    font-size: 27px;
-}
-
-.deal-price span {
-    font-size: 13px;
-    font-weight: 600;
-}
-
-/* Combo Deal Cards */
-
-.deal-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.deal-card {
-    padding: 28px;
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-    transition: 0.3s;
-}
-
-.deal-card:hover {
-    transform: translateY(-6px);
-    border-color: var(--primary);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-}
-
-.deal-card h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 23px;
-    margin: 18px 0 10px;
-}
-
-.deal-card ul {
-    padding-left: 20px;
-    line-height: 2;
-    margin-top: 20px;
-    color: var(--text);
-}
-
-.deal-icon {
-    font-size: 40px;
-    margin-bottom: 15px;
-}
-
-.featured-deal {
-    border: 2px solid var(--primary);
-}
-
-/* Extra Offer Section */
-
-.offer-section {
-    background: var(--light);
-    text-align: center;
-}
-
-.offer-content {
-    max-width: 700px;
-    margin: auto;
-}
-
-.offer-content h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 35px;
-    margin: 18px 0;
-}
-
-.offer-content p {
-    color: var(--text);
-    margin-bottom: 25px;
-}
-
-/* Deals Page Responsive Design */
-
-@media (max-width: 900px) {
-    .deal-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .special-card {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 600px) {
-    .deals-hero {
-        padding: 60px 0;
-    }
-
-    .deal-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .special-card {
-        padding: 20px;
-    }
-
-    .special-image img {
-        height: 230px;
-    }
-
-    .offer-content h2 {
-        font-size: 28px;
-   CAMPUS BITES - GLOBAL STYLES
-
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap');
+
+/* =================================
+   GLOBAL STYLES
+   ================================= */
 
 :root {
     --primary: #e56b35;
@@ -236,6 +54,7 @@ img {
 
 /* =================================
    NAVIGATION
+   ================================= */
 
 .site-header {
     background: var(--white);
@@ -292,6 +111,7 @@ img {
 
 /* =================================
    BUTTONS
+   ================================= */
 
 .btn {
     display: inline-block;
@@ -330,6 +150,7 @@ img {
 
 /* =================================
    HERO SECTION
+   ================================= */
 
 .hero {
     background: var(--light);
@@ -436,6 +257,7 @@ img {
 
 /* =================================
    ABOUT SECTION
+   ================================= */
 
 .about-content {
     display: grid;
@@ -486,6 +308,7 @@ img {
 
 /* =================================
    CATEGORY SECTION
+   ================================= */
 
 .categories-section {
     background: var(--light);
@@ -543,6 +366,7 @@ img {
 
 /* =================================
    OPENING HOURS
+   ================================= */
 
 .hours-content {
     display: grid;
@@ -581,6 +405,7 @@ img {
 
 /* =================================
    CALL TO ACTION
+   ================================= */
 
 .cta-section {
     background: var(--primary);
@@ -601,6 +426,7 @@ img {
 
 /* =================================
    FOOTER
+   ================================= */
 
 .site-footer {
     background: #222222;
@@ -649,10 +475,251 @@ img {
 }
 
 /* =================================
+   DEALS PAGE
+   ================================= */
+
+.deals-hero {
+    background: var(--light);
+    padding: 85px 0;
+    text-align: center;
+}
+
+.deals-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(38px, 5vw, 58px);
+    line-height: 1.2;
+    margin: 15px 0 20px;
+}
+
+.deals-hero h1 span {
+    color: var(--primary);
+}
+
+.deals-hero p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    color: var(--text);
+}
+
+.special-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    align-items: center;
+    background: var(--light);
+    border-radius: 18px;
+    padding: 35px;
+}
+
+.special-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    margin: 18px 0;
+}
+
+.special-content p,
+.deal-card p {
+    color: var(--text);
+    line-height: 1.7;
+}
+
+.special-image img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.deal-tag {
+    display: inline-block;
+    background: #ffe3cf;
+    color: var(--primary-dark);
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.deal-price {
+    margin: 22px 0;
+    color: var(--primary);
+}
+
+.deal-price strong {
+    font-size: 27px;
+}
+
+.deal-price span {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.deal-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.deal-card {
+    padding: 28px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.deal-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--primary);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.deal-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    margin: 18px 0 10px;
+}
+
+.deal-card ul {
+    padding-left: 20px;
+    line-height: 2;
+    margin-top: 20px;
+    color: var(--text);
+}
+
+.deal-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.featured-deal {
+    border: 2px solid var(--primary);
+}
+
+.offer-section {
+    background: var(--light);
+    text-align: center;
+}
+
+.offer-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+.offer-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    margin: 18px 0;
+}
+
+.offer-content p {
+    color: var(--text);
+    margin-bottom: 25px;
+}
+
+/* =================================
+   MENU PAGE
+   ================================= */
+
+.menu-page {
+    background: #fff8f0;
+}
+
+.menu-intro {
+    background: linear-gradient(135deg, #fff1df, #ffe0c2);
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.menu-intro .eyebrow {
+    color: var(--primary-dark);
+    font-weight: 800;
+}
+
+.menu-intro h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(36px, 5vw, 54px);
+    color: var(--dark);
+    margin-bottom: 15px;
+}
+
+.menu-intro p {
+    color: var(--text);
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.menu-section {
+    padding: 60px 30px;
+    margin: 35px 0;
+    background: var(--white);
+    border-radius: 20px;
+    border: 1px solid #f4dfca;
+}
+
+.menu-section:nth-of-type(even) {
+    background: #fff2e5;
+}
+
+.menu-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    color: var(--primary-dark);
+    margin-bottom: 10px;
+}
+
+.menu-section > p {
+    color: var(--text);
+    margin-bottom: 30px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.menu-item {
+    background: var(--light);
+    border: 1px solid #f4d7bd;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 6px 18px rgba(150, 80, 30, 0.07);
+    transition: 0.3s;
+}
+
+.menu-item:hover {
+    background: #fff0df;
+    transform: translateY(-5px);
+    border-color: var(--primary);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.menu-item h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.menu-item p {
+    color: var(--text);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.menu-price {
+    display: inline-block;
+    color: #d95620;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+/* =================================
    RESPONSIVE DESIGN
+   ================================= */
 
 @media (max-width: 1000px) {
-
     .nav-links {
         gap: 13px;
     }
@@ -670,8 +737,18 @@ img {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+    .deal-grid,
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
+    .special-card {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
     .navbar {
         flex-direction: column;
         padding: 20px 0;
@@ -727,8 +804,51 @@ img {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
+    .deals-hero {
+        padding: 60px 0;
+    }
 
+    .deal-grid,
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .special-card {
+        padding: 20px;
+    }
+
+    .special-image img {
+        height: 230px;
+    }
+
+    .offer-content h2 {
+        font-size: 28px;
+    }
+
+    .menu-intro {
+        padding: 55px 15px;
+    }
+
+    .menu-intro h1 {
+        font-size: 36px;
+    }
+
+    .menu-section {
+        padding: 30px 18px;
+        margin: 20px 0;
+    }
+
+    .menu-section h2 {
+        font-size: 28px;
+    }
+
+    .menu-item {
+        padding: 22px;
+    }
+}
+
+@media (max-width: 480px) {
     .container {
         width: 92%;
     }
